@@ -1,0 +1,26 @@
+
+.style-1 {
+  list-style-type: none;
+  padding: 0;
+  margin:0;
+  text-align:left;
+}
+.style-1 li {
+  position: relative;
+}
+.style-1 li em, .style-1 li span {
+  display: block;
+  border-bottom: 5px solid #FFE5E5;
+  padding-bottom: 5px;
+  max-width:100%;
+}
+.style-1 li em {
+  font-style: normal;
+  color:white;
+  border-bottom-color: #DB6B6B;
+  position: absolute;
+  overflow: visible;
+}
+.style-1 li span {
+  text-align: right;
+}

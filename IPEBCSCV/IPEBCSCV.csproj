@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F3ABA8E4-2F19-41E2-B64C-9EEBB68F17BD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IPEBCSCV</RootNamespace>
+    <AssemblyName>IPEBCSCV</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.1.Web, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="IBM.Data.DB2, Version=9.7.4.4, Culture=neutral, PublicKeyToken=7c307b91aa13d208, processorArchitecture=x86" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\font-awesome.min.css" />
+    <Content Include="CSS\jquery.growl.css" />
+    <Content Include="CSS\master_style.css" />
+    <Content Include="CSS\progress_bar_style.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Images\background-image-overlay.png" />
+    <Content Include="Images\Fondo.JPG" />
+    <Content Include="JS\jquery-1.11.1.min.js" />
+    <Content Include="JS\jquery.growl.js" />
+    <Content Include="JS\progress_bar.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Process\Catalogos\AdministrarMarcaVehiculo.aspx" />
+    <Content Include="Process\Catalogos\AdministrarMunicipio.aspx" />
+    <Content Include="Process\Catalogos\AdministrarRegla.aspx" />
+    <Content Include="Process\Catalogos\AdministrarRol.aspx" />
+    <Content Include="Process\Catalogos\AdministrarTipoServicio.aspx" />
+    <Content Include="Process\Catalogos\AdministrarUsuario.aspx" />
+    <Content Include="Process\Catalogos\AdministrarVehiculo.aspx" />
+    <Content Include="Process\Catalogos\Registro\NuevoMarcaVehiculo.aspx" />
+    <Content Include="Process\Catalogos\Registro\NuevoMunicipio.aspx" />
+    <Content Include="Process\Catalogos\Registro\NuevoRegla.aspx" />
+    <Content Include="Process\Catalogos\Registro\NuevoRol.aspx" />
+    <Content Include="Process\Catalogos\Registro\NuevoTipoServicio.aspx" />
+    <Content Include="Process\Catalogos\Registro\NuevoUsuario.aspx" />
+    <Content Include="Process\Catalogos\Registro\NuevoVehiculo.aspx" />
+    <Content Include="Process\Index.aspx" />
+    <Content Include="Process\MonitoreoVehiculos\MonitoreoVehiculos.aspx" />
+    <Content Include="Process\Reportes\AdministrarReportes.aspx" />
+    <Content Include="Process\Reportes\FiltrarBitacoraReporte.aspx" />
+    <Content Include="Process\Reportes\ReporteViewerBitacora.aspx" />
+    <Content Include="Process\Revision\AdministrarRevision.aspx" />
+    <Content Include="Process\Revision\NuevoRevision.aspx" />
+    <Content Include="Process\Servicio\AdministrarServicio.aspx" />
+    <Content Include="Process\Servicio\NuevoServicio.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\GenericPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Catalogos\AdministrarMarcaVehiculo.aspx.cs">
+      <DependentUpon>AdministrarMarcaVehiculo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Catalogos\AdministrarMarcaVehiculo.aspx.designer.cs">
+      <DependentUpon>AdministrarMarcaVehiculo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Catalogos\AdministrarMunicipio.aspx.cs">
+      <DependentUpon>AdministrarMunicipio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Catalogos\AdministrarMunicipio.aspx.designer.cs">
+      <DependentUpon>AdministrarMunicipio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Catalogos\AdministrarRegla.aspx.cs">
+      <DependentUpon>AdministrarRegla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Catalogos\AdministrarRegla.aspx.designer.cs">
+      <DependentUpon>AdministrarRegla.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Catalogos\AdministrarRol.aspx.cs">
+      <DependentUpon>AdministrarRol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Catalogos\AdministrarRol.aspx.designer.cs">
+      <DependentUpon>AdministrarRol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Catalogos\AdministrarTipoServicio.aspx.cs">
+      <DependentUpon>AdministrarTipoServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Catalogos\AdministrarTipoServicio.aspx.designer.cs">
+      <DependentUpon>AdministrarTipoServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Catalogos\AdministrarUsuario.aspx.cs">
+      <DependentUpon>AdministrarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Catalogos\AdministrarUsuario.aspx.designer.cs">
+      <DependentUpon>AdministrarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Catalogos\AdministrarVehiculo.aspx.cs">
+      <DependentUpon>AdministrarVehiculo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Catalogos\AdministrarVehiculo.aspx.designer.cs">
+      <DependentUpon>AdministrarVehiculo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Catalogos\Registro\NuevoMarcaVehiculo.aspx.cs">
+      <DependentUpon>NuevoMarcaVehiculo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Catalogos\Registro\NuevoMarcaVehiculo.aspx.designer.cs">
+      <DependentUpon>NuevoMarcaVehiculo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Catalogos\Registro\NuevoMunicipio.aspx.cs">
+      <DependentUpon>NuevoMunicipio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Catalogos\Registro\NuevoMunicipio.aspx.designer.cs">
+      <DependentUpon>NuevoMunicipio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Catalogos\Registro\NuevoRegla.aspx.cs">
+      <DependentUpon>NuevoRegla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Catalogos\Registro\NuevoRegla.aspx.designer.cs">
+      <DependentUpon>NuevoRegla.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Catalogos\Registro\NuevoRol.aspx.cs">
+      <DependentUpon>NuevoRol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Catalogos\Registro\NuevoRol.aspx.designer.cs">
+      <DependentUpon>NuevoRol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Catalogos\Registro\NuevoTipoServicio.aspx.cs">
+      <DependentUpon>NuevoTipoServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Catalogos\Registro\NuevoTipoServicio.aspx.designer.cs">
+      <DependentUpon>NuevoTipoServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Catalogos\Registro\NuevoUsuario.aspx.cs">
+      <DependentUpon>NuevoUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Catalogos\Registro\NuevoUsuario.aspx.designer.cs">
+      <DependentUpon>NuevoUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Catalogos\Registro\NuevoVehiculo.aspx.cs">
+      <DependentUpon>NuevoVehiculo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Catalogos\Registro\NuevoVehiculo.aspx.designer.cs">
+      <DependentUpon>NuevoVehiculo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\MonitoreoVehiculos\MonitoreoVehiculos.aspx.cs">
+      <DependentUpon>MonitoreoVehiculos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\MonitoreoVehiculos\MonitoreoVehiculos.aspx.designer.cs">
+      <DependentUpon>MonitoreoVehiculos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Reportes\AdministrarReportes.aspx.cs">
+      <DependentUpon>AdministrarReportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Reportes\AdministrarReportes.aspx.designer.cs">
+      <DependentUpon>AdministrarReportes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Reportes\FiltrarBitacoraReporte.aspx.cs">
+      <DependentUpon>FiltrarBitacoraReporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Reportes\FiltrarBitacoraReporte.aspx.designer.cs">
+      <DependentUpon>FiltrarBitacoraReporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Reportes\ReporteViewerBitacora.aspx.cs">
+      <DependentUpon>ReporteViewerBitacora.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Reportes\ReporteViewerBitacora.aspx.designer.cs">
+      <DependentUpon>ReporteViewerBitacora.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Revision\AdministrarRevision.aspx.cs">
+      <DependentUpon>AdministrarRevision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Revision\AdministrarRevision.aspx.designer.cs">
+      <DependentUpon>AdministrarRevision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Revision\NuevoRevision.aspx.cs">
+      <DependentUpon>NuevoRevision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Revision\NuevoRevision.aspx.designer.cs">
+      <DependentUpon>NuevoRevision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Servicio\AdministrarServicio.aspx.cs">
+      <DependentUpon>AdministrarServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Servicio\AdministrarServicio.aspx.designer.cs">
+      <DependentUpon>AdministrarServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Servicio\NuevoServicio.aspx.cs">
+      <DependentUpon>NuevoServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Servicio\NuevoServicio.aspx.designer.cs">
+      <DependentUpon>NuevoServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\CustomRoleProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPages\Main.Master" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common.Web\Common.Web.csproj">
+      <Project>{a4bb9a41-c304-458c-b13b-89d3b6c02c0b}</Project>
+      <Name>Common.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{da8c5b2c-a3ea-41fc-b4ad-0912c820dc92}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPEBCSCV.BusinessEntity\IPEBCSCV.BusinessEntity.csproj">
+      <Project>{268b8a5d-5839-4eb3-99f0-d9a36f95b67d}</Project>
+      <Name>IPEBCSCV.BusinessEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPEBCSCV.BusinessLogic\IPEBCSCV.BusinessLogic.csproj">
+      <Project>{6e7430c8-9227-485a-ab86-6e9cba14ce80}</Project>
+      <Name>IPEBCSCV.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPEBCSCV.Report\IPEBCSCV.Report.csproj">
+      <Project>{1fd09ac9-9782-4bb1-beb8-cd3fdf4b3136}</Project>
+      <Name>IPEBCSCV.Report</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59375/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
