@@ -79,6 +79,8 @@
                                                         </dx:MenuItem>
                                                         <dx:MenuItem Text="&#xf0f6; Reportes" NavigateUrl="../Process/Reportes/AdministrarReportes.aspx">
                                                         </dx:MenuItem>
+                                                        <dx:MenuItem Text="&#xF071; Incidencias" NavigateUrl="../Process/MonitoreoIncidencias/MonitoreoIncidencias.aspx">
+                                                        </dx:MenuItem>
                                                     </Items>
 
                                                     <SeparatorPaddings Padding="0" />

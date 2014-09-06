@@ -96,7 +96,11 @@
     <Content Include="Process\Catalogos\Registro\NuevoTipoServicio.aspx" />
     <Content Include="Process\Catalogos\Registro\NuevoUsuario.aspx" />
     <Content Include="Process\Catalogos\Registro\NuevoVehiculo.aspx" />
+    <Content Include="Process\Incidencias\AdministrarIncidencias.aspx" />
+    <Content Include="Process\Incidencias\NuevoIncidencia.aspx" />
     <Content Include="Process\Index.aspx" />
+    <Content Include="Process\MonitoreoIncidencias\MonitoreoIncidencias.aspx" />
+    <Content Include="Process\MonitoreoIncidencias\NuevoAccion.aspx" />
     <Content Include="Process\MonitoreoVehiculos\MonitoreoVehiculos.aspx" />
     <Content Include="Process\Reportes\AdministrarReportes.aspx" />
     <Content Include="Process\Reportes\FiltrarBitacoraReporte.aspx" />
@@ -225,12 +229,40 @@
     <Compile Include="Process\Catalogos\Registro\NuevoVehiculo.aspx.designer.cs">
       <DependentUpon>NuevoVehiculo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Process\Incidencias\AdministrarIncidencias.aspx.cs">
+      <DependentUpon>AdministrarIncidencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Incidencias\AdministrarIncidencias.aspx.designer.cs">
+      <DependentUpon>AdministrarIncidencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Incidencias\NuevoIncidencia.aspx.cs">
+      <DependentUpon>NuevoIncidencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Incidencias\NuevoIncidencia.aspx.designer.cs">
+      <DependentUpon>NuevoIncidencia.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Process\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Process\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\MonitoreoIncidencias\MonitoreoIncidencias.aspx.cs">
+      <DependentUpon>MonitoreoIncidencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\MonitoreoIncidencias\MonitoreoIncidencias.aspx.designer.cs">
+      <DependentUpon>MonitoreoIncidencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\MonitoreoIncidencias\NuevoAccion.aspx.cs">
+      <DependentUpon>NuevoAccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\MonitoreoIncidencias\NuevoAccion.aspx.designer.cs">
+      <DependentUpon>NuevoAccion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Process\MonitoreoVehiculos\MonitoreoVehiculos.aspx.cs">
       <DependentUpon>MonitoreoVehiculos.aspx</DependentUpon>

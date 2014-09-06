@@ -15,30 +15,26 @@ namespace IPEBCSCV.BusinessEntity
 using System;
     using System.Collections.Generic;
     
-public partial class Municipio
+public partial class Incidencia
 {
 
-    public Municipio()
-    {
+    public int IncidenciaId { get; set; }
 
-        this.vehiculo = new HashSet<Vehiculo>();
+    public string Descripcion { get; set; }
 
-        this.usuario = new HashSet<Usuario>();
+    public int VehiculoId { get; set; }
 
-    }
+    public int UsuarioId { get; set; }
 
-
-    public int MunicipioId { get; set; }
-
-    public string Nombre { get; set; }
-
-    public System.DateTime FechaCreacion { get; set; }
+    public int AccionId { get; set; }
 
 
 
-    public virtual ICollection<Vehiculo> vehiculo { get; set; }
+    public virtual Vehiculo vehiculo { get; set; }
 
-    public virtual ICollection<Usuario> usuario { get; set; }
+    public virtual Accion accion { get; set; }
+
+    public virtual Usuario usuario { get; set; }
 
 }
 

@@ -157,7 +157,9 @@
                             </td>
                             <td width="95%">
                                 <dx:ASPxMemo ID="memDxObservaciones"  CssClass="text-box-general-form" runat="server" Height="71px" Width="100%">
-
+                                    <ValidationSettings SetFocusOnError="True" ValidationGroup="ElementosRequeridos" ErrorDisplayMode="ImageWithTooltip">
+                                        <RequiredField IsRequired="True" ErrorText="Elemento requerido" />
+                                    </ValidationSettings>
                                 </dx:ASPxMemo>
                             </td>
                         </tr>

@@ -25,6 +25,11 @@
         <AssociationConnector Association="ipebc_scvModel.fk_usuario_Rol1" />
         <EntityTypeShape EntityType="ipebc_scvModel.MarcaVehiculo" Width="1.5" PointX="9.375" PointY="0.875" />
         <AssociationConnector Association="ipebc_scvModel.fk_vehiculo_MarcaVehiculo11" />
+        <EntityTypeShape EntityType="ipebc_scvModel.Incidencia" Width="1.5" PointX="7.5" PointY="9.625" />
+        <AssociationConnector Association="ipebc_scvModel.fk_incidencias_vehiculo1" />
+        <EntityTypeShape EntityType="ipebc_scvModel.Accion" Width="1.5" PointX="0.75" PointY="8.875" />
+        <AssociationConnector Association="ipebc_scvModel.fk_incidencias_accion1" />
+        <AssociationConnector Association="ipebc_scvModel.fk_incidencias_usuario1" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

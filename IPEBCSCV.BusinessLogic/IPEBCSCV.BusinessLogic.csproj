@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Manager\AccionManager.cs" />
+    <Compile Include="Manager\IncidenciaManager.cs" />
     <Compile Include="Manager\MarcaVehiculoManager.cs" />
     <Compile Include="Manager\MunicipioManager.cs" />
     <Compile Include="Manager\ReglaManager.cs" />

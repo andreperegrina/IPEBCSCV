@@ -73,6 +73,8 @@ namespace IPEBCSCV.BusinessLogic.ServiceLocator
             servicesType.Add(typeof(VehiculoManager), typeof(VehiculoManager));
             servicesType.Add(typeof(RolManager), typeof(RolManager));
             servicesType.Add(typeof(MarcaVehiculoManager), typeof(MarcaVehiculoManager));
+            servicesType.Add(typeof(IncidenciaManager), typeof(IncidenciaManager));
+            servicesType.Add(typeof(AccionManager), typeof(AccionManager));
             #endregion
 
         }
